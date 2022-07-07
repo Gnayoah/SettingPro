@@ -1,0 +1,142 @@
+
+//by Scave 
+//想学习java的，欢迎加入java学习交流
+//群聊号码：379404624
+fn 按钮着色(id,color)
+cls("android.view.View",view)
+cls("android.graphics.PorterDuff$Mode",pdm)
+cls("android.graphics.Color",gc)
+cls("android.graphics.PorterDuffColorFilter",pdf)
+cls("android.graphics.drawable.Drawable",dr)
+cls("android.graphics.ColorFilter",cf)
+gvs(id,ID)
+javax(bk,ID,view,"getBackground")
+javags(sa,null,pdm,"SRC_ATOP")
+javax(cl,null,gc,"parseColor","String",color)
+javanew(pd,pdf,"int",cl,pdm,sa)
+javax(null,bk,dr,"setColorFilter",cf,pd)
+
+end fn
+
+fn 编辑框着色(id,color)
+cls("android.view.View",view)
+cls("android.graphics.PorterDuff$Mode",pdm)
+cls("android.graphics.Color",gc)
+cls("android.graphics.PorterDuffColorFilter",pdf)
+cls("android.graphics.drawable.Drawable",dr)
+cls("android.graphics.ColorFilter",cf)
+
+gvs(id,ID)
+javax(bk,ID,view,"getBackground")
+javags(sa,null,pdm,"SRC_ATOP")
+javax(cl,null,gc,"parseColor","String",color)
+javanew(pd,pdf,"int",cl,pdm,sa)
+javax(null,bk,dr,"setColorFilter",cf,pd)
+us(id,"textcursordrawable",color)
+
+end fn
+
+fn 长形进度条着色(id,color)
+cls("android.widget.ProgressBar",pb)
+cls("android.graphics.Color",gc)
+cls("android.graphics.PorterDuffColorFilter",pdf)
+cls("android.graphics.drawable.Drawable",dr)
+cls("android.graphics.ColorFilter",cf)
+cls("android.graphics.PorterDuff$Mode",pdm)
+
+gvs(id,ID)
+javax(pdd,ID,pb,"getProgressDrawable")
+javags(sa,null,pdm,"SRC_ATOP")
+javax(cl,null,gc,"parseColor","String",color)
+javanew(pd,pdf,"int",cl,pdm,sa)
+javax(null,pdd,dr,"setColorFilter",cf,pd)
+end fn
+
+fn 圆形进度条着色(ID,color)
+cls("android.widget.ProgressBar",pb)
+cls("android.graphics.Color",gc)
+cls("android.graphics.PorterDuffColorFilter",pdf)
+cls("android.graphics.drawable.Drawable",dr)
+cls("android.graphics.ColorFilter",cf)
+cls("android.graphics.PorterDuff$Mode",pdm)
+
+javax(dic,ID,pb,"getIndeterminateDrawable")
+javags(sa,null,pdm,"SRC_ATOP")
+javax(cl,null,gc,"parseColor","String",color)
+javanew(pd,pdf,"int",cl,pdm,sa)
+javax(null,dic,dr,"setColorFilter",cf,pd)
+
+end fn
+
+fn 拖动条着色(ID,color)
+cls("android.widget.ProgressBar",pb)
+cls("android.graphics.Color",gc)
+cls("android.graphics.PorterDuffColorFilter",pdf)
+cls("android.graphics.drawable.Drawable",dr)
+cls("android.graphics.ColorFilter",cf)
+cls("android.graphics.PorterDuff$Mode",pdm)
+
+//gvs(id,ID)
+//拖动进度条着色
+javax(pdd,ID,pb,"getProgressDrawable")
+javags(sa,null,pdm,"SRC_ATOP")
+javax(cl,null,gc,"parseColor","String",color)
+javanew(pd,pdf,"int",cl,pdm,sa)
+javax(null,pdd,dr,"setColorFilter",cf,pd)
+//滑块着色
+javax(tm,ID,"android.widget.AbsSeekBar","getThumb")
+javags(sa,null,pdm,"SRC_ATOP")
+javax(cl,null,gc,"parseColor","String",color)
+javanew(pd,pdf,"int",cl,pdm,sa)
+javax(null,tm,dr,"setColorFilter",cf,pd)
+
+end fn
+
+fn 单选项着色(id,color)
+cls("android.widget.CompoundButton",cb)
+cls("android.graphics.PorterDuff$Mode",pdm)
+cls("android.graphics.Color",gc)
+cls("android.graphics.PorterDuffColorFilter",pdf)
+cls("android.graphics.drawable.Drawable",dr)
+cls("android.graphics.ColorFilter",cf)
+
+gvs(id,ID)
+javax(bk,ID,cb,"getButtonDrawable")
+javags(sa,null,pdm,"SRC_ATOP")
+javax(cl,null,gc,"parseColor","String",color)
+javanew(pd,pdf,"int",cl,pdm,sa)
+javax(null,bk,dr,"setColorFilter",cf,pd)
+end fn
+
+fn 多选项着色(id,color)
+cls("android.widget.CompoundButton",cb)
+cls("android.graphics.PorterDuff$Mode",pdm)
+cls("android.graphics.Color",gc)
+cls("android.graphics.PorterDuffColorFilter",pdf)
+cls("android.graphics.drawable.Drawable",dr)
+cls("android.graphics.ColorFilter",cf)
+
+gvs(id,ID)
+javax(bk,ID,cb,"getButtonDrawable")
+javags(sa,null,pdm,"SRC_ATOP")
+javax(cl,null,gc,"parseColor","String",color)
+javanew(pd,pdf,"int",cl,pdm,sa)
+javax(null,bk,dr,"setColorFilter",cf,pd)
+end fn
+
+fn 开关着色(ID,color)
+cls("android.widget.Switch",cb)
+cls("android.graphics.PorterDuff$Mode",pdm)
+cls("android.graphics.Color",gc)
+cls("android.graphics.PorterDuffColorFilter",pdf)
+cls("android.graphics.drawable.Drawable",dr)
+cls("android.graphics.ColorFilter",cf)
+
+javax(td,ID,cb,"getThumbDrawable")
+javax(tk,ID,cb,"getTrackDrawable")
+javags(sa,null,pdm,"SRC_ATOP")
+javax(cl,null,gc,"parseColor","String",color)
+javanew(pd,pdf,"int",cl,pdm,sa)
+javax(null,td,dr,"setColorFilter",cf,pd)
+javax(null,tk,dr,"setColorFilter",cf,pd)
+end fn

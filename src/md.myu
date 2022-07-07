@@ -1,0 +1,103 @@
+fn loading(show)
+endkeyboard()
+utw("","",".iyu",false,v){
+}
+nvw(d,v, "线性布局", "width=-1\nheight=80dp\ngravity=center_vertical",d)
+nvw(t,d, "进度条", "width=48dp\nheight=48dp\nstyle=16842874\nlayout_marginleft=24dp")
+nvw(b,d, "文本", "layout_marginleft=24dp\nlayout_marginright=24dp\ntextcolor=#8e8e8e\ntextsize=12dp\nsingleline=true\nellipsize=end",b)
+us(b,"text",show)
+end fn
+
+
+fn pop(show)
+nvw(o,1,"线性布局","width=-1\nheight=-1\ngravity=right\nbackground=#00000000",ss.pop)
+zdp(4,dp)
+java(null,ss.pop,"android.view.View.setElevation","float",dp)
+ssj(ss.pop,"clicki"){
+s ok=null}
+ssj(ss.pop,"touchmonitor"){
+urvw(ss.pop)
+ss pop=null}
+nvw(o,ss.pop,"线性布局","width=196dp\norientation=vertical\nlayout_marginright=4dp\nlayout_margintop=4dp",dc)
+zdp(16,dp)
+ngde(4,"#fafafa",b)
+us(dc,"background",b)
+java(null,dc,"android.view.View.setElevation","float",dp)
+sl(show,".",z)
+s i=0
+for(wc;z){
+s+(1,i)
+nvw(o,dc,"线性布局","width=-1\nheight=48dp\nbackground=through",d)
+nvw(o,d,"文本","width=-1\nheight=-1\ntextcolor=#000000\ntextsize=14dp\ngravity=center_vertical\npaddingleft=16dp\nbackgroundripple=#23232323",id)
+us(id,"text",wc)
+f(i==1){
+ss pop1=id
+}
+f(i==2){
+ss pop2=id
+}
+f(i==3){
+ss pop3=id
+}
+f(i==4){
+ss pop4=id
+}
+f(i==5){
+ss pop5=id
+}
+f(i==6){
+ss pop6=id
+}
+}
+end fn
+
+fn utw(bt,hint,one)
+//endkeyboard()
+utw(null,bt,".iyu","one",false,vs){
+}
+nvw(ds,vs, "线性布局", "width=-1\nheight=80dp\ngravity=center_vertical",ds)
+//nvw(t,d, "进度条", "width=48dp\nheight=48dp\nstyle=16842874\nlayout_marginleft=24dp")
+nvw(bs,ds, "编辑框", "width=-1\nlayout_marginleft=24dp\nlayout_marginright=24dp",bs)
+us(bs,"hint",hint)
+end fn
+
+
+fn tws(nr,stop)
+java(toast,null,"android.widget.Toast.makeText","android.content.Context",activity,"java.lang.CharSequence",nr,"int",stop)
+javags(nr,"android.view.Gravity","android.view.Gravity","CENTER")
+java(null,toast,"android.widget.Toast.setGravity","int",nr,"int",0,"int",0)
+java(null,toast,"android.widget.Toast.show")
+end fn
+
+
+fn tw(id,nr,color,time)
+t()
+{
+f(sss.sfsz==null)
+{
+sss sfsz="1"
+//dha(dh, false, true) 
+//dh(dh, "duration",1000)
+dht(dh, 0, 0, 100, 0)
+dh(dh, "duration", 300)
+ufnsui()
+{
+nvw(99,id,"文本", "width=-1\nheight=50dp\nut_alignparentbottom=true\nbackground=#ababab\ngravity=center\ntextsize=15dp\ntextcolor=#ffffff")
+us(99,"background",color)
+us(99,"text",nr)
+us(99, "dh", dh)
+}
+stop(time)
+//dha(dh, true, false) 
+//dh(dh, "duration",1000)
+dht(dh, 0, 0, 0, 100)
+dh(dh, "duration", 300)
+ufnsui()
+{
+us(99, "dh", dh)
+urvw(99)
+sss sfsz=null
+}
+}
+}
+end fn

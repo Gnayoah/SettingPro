@@ -1,0 +1,275 @@
+<View id="12" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="1" did="12" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=white</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal
+gravity=center
+layout_marginTop=130dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="ImageView">
+<ppt>width=-2
+height=-2
+src=@icon.png</ppt>
+<event></event>
+</View>
+<View id="7" did="2" type="LinearLayout">
+<ppt>width=-2
+height=-2
+orientation=vertical
+layout_marginLeft=15dp</ppt>
+<event></event>
+</View>
+<View id="8" did="7" type="TextView">
+<ppt>width=-2
+height=-2
+text=高级设置
+textColor=#000000
+textSize=30dp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="9" did="7" type="TextView">
+<ppt>width=-2
+height=-2
+text=Setting Pro
+textSize=23dp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="10" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom|center</ppt>
+<event></event>
+</View>
+<View id="11" did="10" type="TextView">
+<ppt>width=-2
+height=-2
+text=正在检查版本更新
+textColor=#000000
+layout_marginBottom=30dp
+textStyle=bold
+textSize=16sp
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="13" did="12" type="LinearLayout">
+<ppt>width=-1
+height=-1
+background=#60000000
+orientation=vertical
+gravity=bottom
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="14" did="13" type="LinearLayout">
+<ppt>width=-1
+height=300dp
+orientation=vertical
+layout_marginBottom=-10dp</ppt>
+<event></event>
+</View>
+<View id="15" did="14" type="CardView">
+<ppt>width=-1
+app_CardElevation=0
+app_CardcornerRadius=16dp
+height=-1</ppt>
+<event></event>
+</View>
+<View id="16" did="15" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="17" did="16" type="LinearLayout">
+<ppt>width=-1
+height=80dp
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="18" did="17" type="TextView">
+<ppt>width=-2
+height=-2
+text=发现版本更新
+textStyle=bold
+textSize=18sp
+textColor=#000000</ppt>
+<event></event>
+</View>
+<View id="19" did="16" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="20" did="19" type="TextView">
+<ppt>width=-2
+height=-2
+text=正在获取更新日志
+textSize=16sp
+textColor=#000000
+layout_marginLeft=30dp
+layout_marginRight=30dp</ppt>
+<event></event>
+</View>
+<View id="21" did="16" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom</ppt>
+<event></event>
+</View>
+<View id="22" did="21" type="LinearLayout">
+<ppt>width=-1
+height=80dp
+orientation=horizontal
+layout_marginBottom=10dp</ppt>
+<event></event>
+</View>
+<View id="23" did="22" type="LinearLayout">
+<ppt>width=-1
+height=-1
+layout_weight=1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="25" did="23" type="CardView">
+<ppt>width=-1
+height=50dp
+app_CardcornerRadius=16dp
+layout_marginLeft=30dp
+layout_marginRight=10dp
+app_CardElevation=0</ppt>
+<event></event>
+</View>
+<View id="26" did="25" type="LinearLayout">
+<ppt>width=-1
+height=-1
+background=#f2f3f5
+orientation=vertical
+gravity=center</ppt>
+<event><eventItme type="clicki">uigo("首页.iyu")
+end()</eventItme></event>
+</View>
+<View id="27" did="26" type="TextView">
+<ppt>width=-2
+height=-2
+text=下次一定
+textColor=#90000000
+textStyle=bold
+textSize=16dp
+</ppt>
+<event></event>
+</View>
+<View id="28" did="22" type="LinearLayout">
+<ppt>width=-1
+height=-1
+layout_weight=1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="29" did="28" type="CardView">
+<ppt>width=-1
+height=50dp
+app_CardcornerRadius=16dp
+layout_marginright=30dp
+layout_marginleft=10dp
+app_CardElevation=0</ppt>
+<event></event>
+</View>
+<View id="30" did="29" type="LinearLayout">
+<ppt>width=-1
+height=-1
+background=#2a82e4
+orientation=vertical
+gravity=center</ppt>
+<event><eventItme type="clicki">hws("https://www.coolapk.com/apk/com.miui.gaojishezhi.plus")</eventItme></event>
+</View>
+<View id="31" did="30" type="TextView">
+<ppt>width=-2
+height=-2
+text=去更新
+textColor=#ffffff
+textStyle=bold
+textSize=16dp
+</ppt>
+<event></event>
+</View>
+<View id="32" did="0" type="WebView">
+<ppt>width=-2
+height=-2</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">//设置状态栏透明(沉浸式)
+java(cs, activity, "android.app.Activity.getWindow")
+java(cs2, cs, "android.view.Window.getDecorView")
+java(null, cs2, "android.view.View.setSystemUiVisibility", "int", "8192")
+java(null, cs, "android.view.Window.addFlags", "int", "67108864")</eventItme><eventItme type="loadingComplete">javax(pm,activity,"android.content.ContextWrapper","getPackageManager")
+javax(pknm,activity,"android.content.ContextWrapper","getPackageName")
+//本应用包名
+syso(pknm)
+ 
+javax(ver,pm,"android.content.pm.PackageManager","getPackageInfo","String",pknm,"int",0)
+javags(版本,ver,"android.content.pm.PackageInfo.versionName")
+//本包名的版本
+syso(版本)
+ 
+javax(icon,pm,"android.content.pm.PackageManager","getApplicationInfo","String",pknm,"int",0)
+javax(图标,icon,"android.content.pm.PackageItemInfo","loadIcon","android.content.pm.PackageManager",pm)
+//本应用图标
+syso(图标)
+ 
+javags(pkg,ver,"android.content.pm.PackageInfo.applicationInfo")
+javax(应用名称,pkg,"android.content.pm.PackageItemInfo","loadLabel","android.content.pm.PackageManager",pm)
+//本应用名
+syso(应用名称)
+
+ 
+
+
+
+f(pknm == "com.miui.gaojishezhi.plus")
+{
+t()
+{
+  hs("http://settingpro.uotan.ltd/log.txt",ht)
+  syso(ht)
+  us(20,"text",ht)
+  
+  hs("http://settingpro.uotan.ltd/update.txt",htq)
+  syso(htq)
+  
+  f(htq&gt;版本)
+  {
+    ufnsui()
+    {
+      us(13,"visibility","visible")
+    }
+  }else
+  {
+   uigo("首页.iyu")
+   end()
+  }
+}
+
+  
+}else
+{
+  tw("你正在使用盗版")
+  us(11,"text","你正在使用盗版，请立即卸载并使用正版")
+}</eventItme><eventItme type="downkey">.</eventItme></UIEventset>

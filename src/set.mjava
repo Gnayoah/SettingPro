@@ -1,0 +1,25 @@
+//新建一个set.mjava
+
+import android.app.*;
+import android.content.res.*;
+import android.graphics.*;
+import android.os.*;
+
+
+public static void setBackground(Activity activity, int id, int yja, int yjb, int yjc, int yjd, String color)
+{
+  try
+  {
+     android.graphics.drawable.GradientDrawable shape = new android.graphics.drawable.GradientDrawable();
+     shape.setShape(android.graphics.drawable.GradientDrawable.RECTANGLE);
+     shape.setCornerRadii(new float[] { yja, yja, yjb, yjb, yjc, yjc, yjd, yjd });
+     shape.setColor(Color.parseColor(color));
+     shape.setStroke(0, Color.parseColor("#ffffff"));
+     activity.findViewById(id).setBackgroundDrawable(shape);
+  }
+  catch (Exception e)
+  {
+  }
+}
+
+

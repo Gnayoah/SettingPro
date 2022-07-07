@@ -1,0 +1,182 @@
+/.
+作者残页，QQ1582270018
+这东西Scave和Rose都写过了，只不过要么在我手机上报错要么一堆bug，所以自己弄了一个
+只应该调用控件着色这个方法，里面把所有事情都做好了
+注释里写了内部函数的函数，请不要随便调用
+兼容可能没弄好，如果在哪部手机上运行会报错请反馈给我
+（反正我2.3.6都没报错，只是不好看而已）
+
+关于有些调用了系统的实现的，一些是自己的实现在高版本上不能用，一些是为了防止出现一些奇怪的bug
+
+ps：为了兼容我下载了Api22，Api19，Api15的源码啃
+./
+
+fn 控件着色(控件,颜色)
+java(类,控件,"java.lang.Object.getClass")
+java(类名,类,"java.lang.Class.getName")
+f(类名 == "java.lang.Integer"){
+  gvs(控件,控件)
+  java(类,控件,"java.lang.Object.getClass")
+  java(类名,类,"java.lang.Class.getName")
+  }
+f(颜色 ? "#"){
+  java(颜色,null,"android.graphics.Color.parseColor","String",颜色)
+  }
+f(类名 == "android.widget.EditText"){
+  fn 着色.编辑框着色(控件,颜色)
+  }else f(类名 == "android.widget.CheckBox" || 类名 == "android.widget.RadioButton" || ){
+  fn 着色.单选多选着色(控件,颜色)
+  }else f(类名 == "android.widget.ProgressBar" || 类名 == "android.widget.RatingBar"){
+  //RatingBar间接继承自ProgressBar，貌似这样也可以，就偷懒了
+  
+  fn 着色.进度条着色(控件,颜色)
+  }else f(类名 == "android.support.v7.widget.SwitchCompat"){
+  fn 着色.开关着色(控件,颜色)
+  }else f(类名 == "android.widget.SeekBar"){
+  fn 着色.拖动条着色(控件,颜色)
+  }else f(类名 == "android.widget.ImageView"){
+  fn 着色.图片控件着色(控件,颜色)
+  }else f(类名 == "android.widget.ScrollView"){
+  fn 着色.滚动控件边缘着色(控件,颜色)
+  }else f(类名 == "android.widget.ListView"){
+  fn 着色.列表控件边缘着色(控件,颜色)
+  }else f(类名 == "android.widget.HorizontalScrollView"){
+  fn 着色.水平滚动边缘着色(控件,颜色)
+  }else f(类名 == "android.support.v4.view.ViewPager"){
+  fn 着色.滑动窗体边缘着色(控件,颜色)
+  }else{
+  fn 着色.背景着色(控件,颜色)
+}
+end fn
+
+fn 编辑框着色(控件,颜色)
+fn 着色.背景着色(控件,颜色)
+javags(SDK_INT,null,"android.os.Build$VERSION","SDK_INT")
+f(SDK_INT &gt; 12){
+  //安卓版本大于3.1才支持光标着色
+  javags(dres,控件,"android.widget.TextView","mCursorDrawableRes")
+  f(dres &gt; 0){
+    java(res,activity,"android.content.Context.getResources")
+    java(drawable,res,"android.content.res.Resources.getDrawable","int",dres)
+    fn 着色.Drawable着色(drawable,颜色)
+    javags(editor,控件,"android.widget.TextView","mEditor")
+    javags(drawables,editor,"android.widget.Editor","mCursorDrawable")
+    sssz(drawables,0,sss.drawable)
+    sssz(drawables,1,sss.drawable)
+    
+    //还有个问题，那个选择水滴的颜色不能改……    
+    }
+  }
+end fn
+
+fn 单选多选着色(控件,颜色)
+javags(SDK_INT,null,"android.os.Build$VERSION","SDK_INT")
+f(SDK_INT &gt;= 21){
+  //5.0以上直接调用系统的设置颜色
+  java(csl,null,"android.content.res.ColorStateList.valueOf","int",颜色)
+  java(null,控件,"android.widget.CompoundButton.setButtonTintList","android.content.res.ColorStateList",csl)
+  }else{
+  //5.0以下自己实现（其实5.0以上系统自己的实现也是这样）
+  javags(drawable,控件,"android.widget.CompoundButton","mButtonDrawable")
+  fn 着色.Drawable着色(drawable,颜色)
+  }
+end fn
+
+fn 进度条着色(控件,颜色)
+java(是否不精确,控件,"android.widget.ProgressBar.isIndeterminate")
+f(是否不精确){
+  java(drawable,控件,"android.widget.ProgressBar.getIndeterminateDrawable")
+  fn 着色.Drawable着色(drawable,颜色)
+  }else{
+  java(drawable,控件,"android.widget.ProgressBar.getProgressDrawable")
+  fn 着色.Drawable着色(drawable,颜色)
+  }
+end fn
+
+fn 拖动条着色(控件,颜色)
+fn 着色.进度条着色(控件,颜色)
+//SeekBar继承自ProgressBar，可以直接这样对进度值着色
+//让我偷个懒吧……
+
+java(drawable,控件,"android.widget.AbsSeekBar.getThumb")
+fn 着色.Drawable着色(drawable,颜色)
+end fn
+
+fn 开关着色(控件,颜色)
+java(轨迹,控件,"android.support.v7.widget.SwitchCompat.getTrackDrawable")
+fn 着色.Drawable着色(轨迹,颜色)
+java(滑块,控件,"android.support.v7.widget.SwitchCompat.getThumbDrawable")
+fn 着色.Drawable着色(滑块,颜色)
+end fn
+
+fn 图片控件着色(控件,颜色)
+java(null,控件,"android.widget.ImageView.setColorFilter","int",颜色)
+end fn
+
+fn 滚动控件边缘着色(控件,颜色)
+javags(顶部边缘,控件,"android.widget.ScrollView","mEdgeGlowTop")
+fn 着色.EdgeEffect着色(顶部边缘,颜色)
+javags(底部边缘,控件,"android.widget.ScrollView","mEdgeGlowBottom")
+fn 着色.EdgeEffect着色(底部边缘,颜色)
+end fn
+
+fn 列表控件边缘着色(控件,颜色)
+javags(顶部边缘,控件,"android.widget.AbsListView","mEdgeGlowTop")
+fn 着色.EdgeEffect着色(顶部边缘,颜色)
+javags(底部边缘,控件,"android.widget.AbsListView","mEdgeGlowBottom")
+fn 着色.EdgeEffect着色(底部边缘,颜色)
+end fn
+
+fn 水平滚动边缘着色(控件,颜色)
+javags(左边缘,控件,"android.widget.HorizontalScrollView","mEdgeGlowLeft")
+fn 着色.EdgeEffect着色(左边缘,颜色)
+javags(右边缘,控件,"android.widget.HorizontalScrollView","mEdgeGlowRight")
+fn 着色.EdgeEffect着色(右边缘,颜色)
+end fn
+
+fn 滑动窗体边缘着色(控件,颜色)
+javags(左边缘,控件,"android.support.v4.view.ViewPager","mLeftEdge")
+fn 着色.EdgeEffectCompat着色(左边缘,颜色)
+javags(右边缘,控件,"android.support.v4.view.ViewPager","mRightEdge")
+fn 着色.EdgeEffectCompat着色(右边缘,颜色)
+end fn
+
+fn 背景着色(控件,颜色)
+java(背景,控件,"android.view.View.getBackground")
+fn 着色.Drawable着色(背景,颜色)
+end fn
+
+fn Drawable着色(drawable,颜色)
+//内部函数，请不要随意调用
+f(drawable != null){
+  javags(atop,null,"android.graphics.PorterDuff$Mode","SRC_ATOP")
+  javanew(pdcf,"android.graphics.PorterDuffColorFilter","int",颜色,"android.graphics.PorterDuff$Mode",atop)
+  java(null,drawable,"android.graphics.drawable.Drawable.setColorFilter","android.graphics.ColorFilter",pdcf)
+  sss drawable = drawable
+  }
+end fn
+
+fn EdgeEffect着色(edge,颜色)
+//内部函数，请不要随意调用
+f(edge != null){
+  javags(SDK_INT,null,"android.os.Build$VERSION","SDK_INT")
+  f(SDK_INT &gt;= 21){
+    //Api21及以上，绘制方法变化，调用系统的方法进行着色
+    java(null,edge,"android.widget.EdgeEffect.setColor","int",颜色)
+    }else{
+    //Api21以下，自己实现
+    javags(drawable,edge,"android.widget.EdgeEffect","mEdge")
+    fn 着色.Drawable着色(drawable,颜色)
+    javags(drawable,edge,"android.widget.EdgeEffect","mGlow")
+    fn 着色.Drawable着色(drawable,颜色)
+    }
+  }
+end fn
+
+fn EdgeEffectCompat着色(edgeCompat,颜色)
+//内部函数，请不要随意调用
+f(edgeCompat != null){
+  javags(edge,edgeCompat,"android.support.v4.widget.EdgeEffectCompat","mEdgeEffect")
+  fn 着色.EdgeEffect着色(edge,颜色)
+  }
+end fn

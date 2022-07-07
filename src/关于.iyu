@@ -1,0 +1,182 @@
+<View id="17" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#ffffffff</ppt>
+<event></event>
+</View>
+<View id="1" did="17" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#ffffffff
+layout_marginTop=50dp</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="ImageView">
+<ppt>width=25dp
+height=25dp
+src=@back.png
+layout_marginTop=20dp
+layout_marginLeft=20dp
+BackgroundRipple=#9e9e9e</ppt>
+<event><eventItme type="clicki">end()</eventItme></event>
+</View>
+<View id="20" did="1" type="TextView">
+<ppt>width=210dp
+height=70dp
+text=高级设置
+layout_marginLeft=50dp
+gravity=center_vertical
+textColor=#000000
+textSize=30sp
+layout_marginTop=30dp
+textStyle=bold</ppt>
+<event><eventItme type="clicki">sit(a,"ACTION", "android.intent.action.VIEW") 
+sit(a,"data","https://www.coolapk.com/apk/com.miui.gaojishezhi") 
+//以上为需要调用浏览器访问的网站 
+uit(a, "chooser", "选择浏览器") </eventItme></event>
+</View>
+<View id="4" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=Version：6.1.6100
+textSize=18sp
+layout_marginLeft=50dp
+textColor=#FF666666
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="5" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=我们目前没有任何公众号和官网，请勿上当受骗
+textSize=15sp
+layout_marginLeft=50dp
+textColor=#FF666666
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="6" did="1" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=horizontal
+gravity=center_vertical
+layout_marginTop=70dp</ppt>
+<event><eventItme type="clicki">hws("https://www.coolapk.com/apk/com.miui.gaojishezhi.plus")</eventItme></event>
+</View>
+<View id="7" did="6" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@million_refresh.png
+layout_marginLeft=50dp</ppt>
+<event></event>
+</View>
+<View id="8" did="6" type="TextView">
+<ppt>width=-2
+height=-2
+text=在酷安查看
+textColor=#ff000000
+textSize=15sp
+textStyle=bold
+layout_marginLeft=15dp</ppt>
+<event></event>
+</View>
+<View id="9" did="1" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=horizontal
+gravity=center_vertical
+</ppt>
+<event><eventItme type="clicki">
+sit(a, "action", "android.intent.action.SEND")
+sit(a, "type", "text/plain")
+sit(a, "extra", "android.intent.extra.SUBJECT", "分享软件")
+sit(a, "extra", "android.intent.extra.TEXT", "向你推荐一个好用的软件吧\n\n软件名：高级设置\n\n它可以打开手机设置中隐藏的功能，例如高级屏幕调色等隐藏功能。而且这个软件界面美观，十分地简洁，好用。\n\n软件很小，没有任何的病毒或绑捆插件\n\n请你来体验一下吧\nhttps://www.coolapk.com/apk/com.miui.gaojishezhi.plus")
+sit(a, "flags", 268435456)
+uit(a, "chooser", "分享")
+
+</eventItme></event>
+</View>
+<View id="10" did="9" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@million_share.png
+layout_marginLeft=50dp</ppt>
+<event></event>
+</View>
+<View id="11" did="9" type="TextView">
+<ppt>width=-2
+height=-2
+text=分享给好友
+textColor=#ff000000
+textSize=15sp
+textStyle=bold
+layout_marginLeft=15dp</ppt>
+<event></event>
+</View>
+<View id="12" did="1" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=horizontal
+gravity=center_vertical
+</ppt>
+<event><eventItme type="clicki">uigo("消息.iyu")</eventItme></event>
+</View>
+<View id="13" did="12" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@import.png
+layout_marginLeft=50dp</ppt>
+<event></event>
+</View>
+<View id="14" did="12" type="TextView">
+<ppt>width=-2
+height=-2
+text=隐私政策/重要通知
+textColor=#ff000000
+textSize=15sp
+textStyle=bold
+layout_marginLeft=15dp</ppt>
+<event></event>
+</View>
+<View id="15" did="1" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+</ppt>
+<event></event>
+</View>
+<View id="16" did="15" type="ImageView">
+<ppt>width=-1
+height=-1
+src=@setting_about_bottom_logo.png
+scaleType=centercrop
+ut_alignParentBottom=true
+layout_marginTop=60dp</ppt>
+<event></event>
+</View>
+<View id="18" did="15" type="TextView">
+<ppt>width=-2
+height=-2
+text=本软件"高级设置"由酷安皓洋开发
+ut_alignParentRight=true
+ut_alignParentBottom=true
+layout_marginRight=20dp
+layout_marginBottom=20dp
+textColor=#ffffffff
+textSize=13sp</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">java(cs, activity, "android.app.Activity.getWindow")
+java(cs2, cs, "android.view.Window.getDecorView")
+java(null, cs2, "android.view.View.setSystemUiVisibility", "int", "8192")
+java(null, cs, "android.view.Window.addFlags", "int", "67108864")
+/.
+s a = "h"
+swh(a, h)
+s a = "hh"
+swh(a, hh)
+s-(hh,h,hhh)
+ss(hhh+"dp",b)
+us(1,"layout_margintop",b)
+</eventItme></UIEventset>

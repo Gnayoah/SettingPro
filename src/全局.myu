@@ -1,0 +1,25 @@
+fn 状态栏(类型)
+sss ztys="#1E88E5"
+ushsp(false)
+f(类型=="true")
+{
+swh("pxztl",zh)
+zpd(zh,ch)
+ss(ch+"dp",ch)
+us(4,"height",ch)
+java(cs,activity,"android.app.Activity.getWindow")
+java(cs2,cs,"android.view.Window.getDecorView")
+java(null,cs2,"android.view.View.setSystemUiVisibility","int","8192")
+//设置状态栏透明(沉浸式)
+java(null,cs,"android.view.Window.addFlags","int","67108864")
+}
+else f(类型=="false")
+{
+  swh("pxztl",zh)
+zpd(zh,ch)
+ss(ch+"dp",ch)
+us(4,"height",ch)
+  uycl(true)
+  uycl(false)
+}
+end fn

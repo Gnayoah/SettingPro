@@ -1,0 +1,177 @@
+<View id="3" did="0" type="LinearLayout">
+<ppt>width=-1
+height=100dp
+orientation=vertical
+background=white</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="LinearLayout">
+<ppt>width=-2
+height=-1
+orientation=horizontal
+gravity=center_vertical</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="ImageView">
+<ppt>width=25dp
+height=25dp
+src=@back.png
+layout_marginTop=20dp
+layout_marginLeft=20dp
+BackgroundRipple=#9e9e9e</ppt>
+<event><eventItme type="clicki">end()</eventItme></event>
+</View>
+<View id="6" did="4" type="TextView">
+<ppt>width=-2
+height=-2
+text=管家设置
+layout_marginTop=20dp
+layout_marginLeft=20dp
+textColor=#000000
+textSize=20sp</ppt>
+<event></event>
+</View>
+<View id="7" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+background=white
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="8" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-1
+gravity=center
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="9" did="8" type="ProgressBar">
+<ppt>width=30dp
+height=30dp
+style=16842871
+</ppt>
+<event></event>
+</View>
+<View id="10" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-1
+gravity=center
+orientation=vertical
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="12" did="10" type="TextView">
+<ppt>width=-2
+height=-2
+text=无法连接服务器
+textColor=#000000
+textSize=18sp
+layout_marginTop=-20dp</ppt>
+<event></event>
+</View>
+<View id="13" did="10" type="TextView">
+<ppt>width=-2
+height=-2
+text=这不是单机应用吗？为什么要联网？\n这不是单机应用，高级设置Plus的选项基于云端\n我们会远程添加修改或删除选项,以给您更好的体验\n\n所以请检查您的网络状态
+gravity=center
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="1" did="7" type="RecyclerView">
+<ppt>width=-1
+height=-1
+layout_marginLeft=16dp
+layout_marginRight=16dp
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="2" did="0" type="WebView">
+<ppt>width=-2
+height=-2</ppt>
+<event><eventItme type="onpagefinished">syso("_______________________")
+
+t()
+{
+  sj(sss.b,"&lt;settingpro&gt;","&lt;/settingpro&gt;",sss.thing)
+  sj(sss.thing,"&lt;name&gt;","&lt;/name&gt;",name)
+  syso(name)
+  sj(sss.thing,"&lt;des&gt;","&lt;/des&gt;",des)
+  syso(des)
+  sj(sss.thing,"&lt;pac&gt;","&lt;/pac&gt;",pac)
+  syso(pac)
+  sj(sss.thing,"&lt;act&gt;","&lt;/act&gt;",act)
+  syso(act)
+  
+  s a = sss.b
+  s b = sss.thing
+  s c = ""
+  sr(a,b,c,sss.b)
+  s a = sss.b
+  s b = "&lt;settingpro&gt;&lt;/settingpro&gt;"
+  s c = ""
+  sr(a,b,c,sss.b)
+  
+  f(name == null || name == "null")
+  {
+    syso("over")
+    ufnsui()
+    {
+      uls(1,sss.d,"item.iyu",-1,-2)
+      gvs(1,对象)
+cls("android.support.v7.widget.RecyclerView",列表类)
+cls("android.support.v7.widget.StaggeredGridLayoutManager",布局管理类)
+javanew(布局,布局管理类,"int",2,"int",1)
+javax(null,对象,列表类,"setLayoutManager","android.support.v7.widget.RecyclerView$LayoutManager",布局)
+  us(8,"visibility","gone")
+  }
+    
+   endcode
+  }else
+{
+  ufnsui()
+  {
+    ula(sss.d,15=name,16=des,17=pac,18=act)
+    us(2,"url","about:blank")
+    
+  }
+}
+
+
+
+
+
+}</eventItme></event>
+</View>
+<UIEventset><eventItme type="loadingComplete">
+
+s a = "help.txt"
+
+ss("http://settingpro.uotan.ltd/" + a ,link)
+t()
+{
+  hs(link,sss.b)
+ // syso(sss.b)
+  ufnsui()
+  {
+    us(2,"url","about:blank")
+  }
+  
+}</eventItme><eventItme type="loading">//设置状态栏透明(沉浸式)
+java(cs, activity, "android.app.Activity.getWindow")
+java(cs2, cs, "android.view.Window.getDecorView")
+java(null, cs2, "android.view.View.setSystemUiVisibility", "int", "8192")
+java(null, cs, "android.view.Window.addFlags", "int", "67108864")
+
+
+t()
+{
+  hs("https://www.baidu.com",a)
+  f(a == null || a == "null")
+  {
+    ufnsui()
+    {
+      //tw("网络异常\n无法从云端获取选项\n请检查网络设置")
+us(10,"visibility","visible")
+    }
+  }
+}</eventItme></UIEventset>
