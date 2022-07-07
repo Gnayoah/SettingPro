@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<title>高级设置</title>
+<icon>icon.png</icon>
+<packageName>com.miui.gaojishezhi.plus</packageName>
+<versionName>7.0</versionName>
+<versionint>7000</versionint>
+<sdk>26</sdk>
+<yuv>3</yuv>
+<remark></remark>
+<Permissions>android.permission.READ_EXTERNAL_STORAGE
+android.permission.INTERNET
+android.permission.WRITE_EXTERNAL_STORAGE</Permissions>
+<createTime>2019-12-20 03:34:13</createTime>
+<upTime>2019-12-20 03:34:13</upTime>
