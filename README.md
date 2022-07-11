@@ -72,7 +72,7 @@ Has the following characteristics:
 
 ## Licence
 
-This project is **basically** open sourced under the AGPL-3.0 license, **but with additional terms**, see the [LICENSE file](https://github.com/DropWave/SettingPro/blob/main/LICENSE)。
+This project is **basically** open sourced under the AGPL-3.0 license, **but with additional terms**, see the [LICENSE](https://github.com/DropWave/SettingPro/blob/main/LICENSE)。
  
 
 Star and help improve this project is the best donation to us
