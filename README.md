@@ -37,12 +37,10 @@
 
 本项目 **基本上** 在 AGPL-3.0 许可证下开源，**但有额外的条款** ，详情参阅 [LICENSE 文件](https://github.com/DropWave/SettingPro/blob/main/LICENSE)。
 
+点上 Star 和帮助完善这个项目是对我们最好的捐赠
+
 # Introduction in English 
 The English version is translated by Google Translator, and there may be some inaccuracies in the expression, please understand.
-
- 
-
-点上 Star 和帮助完善这个项目是对我们最好的捐赠
 
 
 English is used to make it easier for non-Chinese people to understand on Github. The text in the software and open source code is not available in English. But Advanced Settings Plus is an open source application, of course, you can make translations and other modifications for Advanced Settings Plus, but you must operate under the license of the LICENSE file.
