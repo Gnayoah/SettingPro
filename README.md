@@ -33,12 +33,13 @@
 - 可以开启被隐藏的原生安卓功能
 - 现已支持所有Android系统
 
-
-# Introduction in English 
-The English version is translated by Google Translator, and there may be some inaccuracies in the expression, please understand.
 ## Licence
 
 本项目 **基本上** 在 AGPL-3.0 许可证下开源，**但有额外的条款** ，详情参阅 [LICENSE 文件](https://github.com/DropWave/SettingPro/blob/main/LICENSE)。
+
+# Introduction in English 
+The English version is translated by Google Translator, and there may be some inaccuracies in the expression, please understand.
+
  
 
 点上 Star 和帮助完善这个项目是对我们最好的捐赠
