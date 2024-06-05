@@ -1,3 +1,5 @@
+## Welcome to the new SettingPro, we upgraded to Flutter in March 2024 to ensure the reliability of the program.
+
 ## SettingPro
 Quickly launch some pages and create shortcuts by applying the activity package name.
 
