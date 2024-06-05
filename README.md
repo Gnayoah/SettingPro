@@ -1,6 +1,20 @@
 ## Welcome to the new SettingPro, we upgraded to Flutter in March 2024 to ensure the reliability of the program.
+![GitHub Repo stars](https://img.shields.io/github/stars/dropwave/settingpro?style=flat)
+![forks](https://img.shields.io/github/forks/dropwave/settingpro?style=flat)
+![watchs](https://img.shields.io/github/watchers/dropwave/settingpro?style=flat)
+
+![created](https://img.shields.io/github/created-at/DropWave/SettingPro) 
+![version](https://img.shields.io/github/v/release/Dropwave/Settingpro)
+![download](https://img.shields.io/github/downloads/DropWave/SettingPro/total)
+![download](https://img.shields.io/github/languages/top/dropwave/settingpro)
+
+
+
+
+
 
 ## SettingPro
+
 Quickly launch some pages and create shortcuts by applying the activity package name.
 
 Development/Design: Haoyang
