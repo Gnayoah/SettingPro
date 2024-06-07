@@ -159,8 +159,8 @@ class _MyHomePageState extends State<MyHomePage> {
               Expanded(
                 child: ElevatedButton(
                   onPressed: () {
-                     Global.textContent = 'http://example.com/网络设置.txt';
-                     Global.texttitle = '网络设置';
+                      Global.textContent = 'http://example.com/xxx.txt';
+                      Global.texttitle = 'New page name'; 
                     // 点击按钮后导航到新页面
                     Navigator.push(
                       context,
@@ -231,8 +231,8 @@ class _MyHomePageState extends State<MyHomePage> {
               Expanded(
                 child: ElevatedButton(
                   onPressed: () {
-                     Global.textContent = 'http://example.com/蓝牙设置.txt';
-                      Global.texttitle = '蓝牙设置';
+                       Global.textContent = 'http://example.com/xxx.txt';
+                    Global.texttitle = 'New page name'; 
                     // 点击按钮后导航到新页面
                     Navigator.push(
                       context,
@@ -292,8 +292,8 @@ class _MyHomePageState extends State<MyHomePage> {
               Expanded(
                 child: ElevatedButton(
                   onPressed: () {
-                     Global.textContent = 'http://example.com/显示设置.txt';
-                      Global.texttitle = '显示设置';
+                       Global.textContent = 'http://example.com/xxx.txt';
+                    Global.texttitle = 'New page name'; 
                     // 点击按钮后导航到新页面
                     Navigator.push(
                       context,
@@ -360,8 +360,8 @@ class _MyHomePageState extends State<MyHomePage> {
               Expanded(
                 child: ElevatedButton(
                   onPressed: () {
-                     Global.textContent = 'http://example.com/应用设置.txt';
-                      Global.texttitle = '应用设置';
+                      Global.textContent = 'http://example.com/xxx.txt';
+                    Global.texttitle = 'New page name'; 
                     // 点击按钮后导航到新页面
                     Navigator.push(
                       context,
@@ -421,8 +421,8 @@ class _MyHomePageState extends State<MyHomePage> {
               Expanded(
                 child: ElevatedButton(
                   onPressed: () {
-                     Global.textContent = 'http://example.com/连接设置.txt';
-                      Global.texttitle = '连接设置';
+                      Global.textContent = 'http://example.com/xxx.txt';
+                    Global.texttitle = 'New page name'; 
                     // 点击按钮后导航到新页面
                     Navigator.push(
                       context,
@@ -488,8 +488,8 @@ class _MyHomePageState extends State<MyHomePage> {
               Expanded(
                 child: ElevatedButton(
                   onPressed: () {
-                     Global.textContent = 'http://example.com/性能设置.txt';
-                      Global.texttitle = '性能设置';
+                      Global.textContent = 'http://example.com/xxx.txt';
+                    Global.texttitle = 'New page name'; 
                     // 点击按钮后导航到新页面
                     Navigator.push(
                       context,
@@ -549,8 +549,8 @@ class _MyHomePageState extends State<MyHomePage> {
               Expanded(
                 child: ElevatedButton(
                   onPressed: () {
-                     Global.textContent = 'http://example.com/状态栏设置.txt';
-                      Global.texttitle = '状态栏设置';
+                      Global.textContent = 'http://example.com/xxx.txt';
+                    Global.texttitle = 'New page name'; 
                     // 点击按钮后导航到新页面
                     Navigator.push(
                       context,
@@ -616,8 +616,8 @@ class _MyHomePageState extends State<MyHomePage> {
               Expanded(
                 child: ElevatedButton(
                   onPressed: () {
-                     Global.textContent = 'http://example.com/MIUI定制系统设置.txt';
-                      Global.texttitle = 'MIUI设置';
+                      Global.textContent = 'http://example.com/xxx.txt';
+                    Global.texttitle = 'New page name'; 
                     // 点击按钮后导航到新页面
                     Navigator.push(
                       context,
@@ -677,8 +677,8 @@ class _MyHomePageState extends State<MyHomePage> {
               Expanded(
                 child: ElevatedButton(
                   onPressed: () {
-                     Global.textContent = 'http://example.com/更多设置.txt';
-                      Global.texttitle = '更多设置';
+                      Global.textContent = 'http://example.com/xxx.txt';
+                    Global.texttitle = 'New page name'; 
                     // 点击按钮后导航到新页面
                     Navigator.push(
                       context,
