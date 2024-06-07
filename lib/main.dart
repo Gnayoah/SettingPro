@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: '隐启设置',
+      title: 'SettingPro Demo',
       theme: ThemeData(
         useMaterial3: true,
         primarySwatch: Colors.blue,
@@ -90,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: ListBody(
                 children: <Widget>[
                 Text('最新版本：$_remoteVersion\n'),
-                Text('由于您正在使用测试版本，所以这是一个强制更新，很抱歉带来不便，敬请谅解。\n\n点击确定前往官网下载最新测试版本'),
+                Text('update details'),
 
                 ],
               ),
@@ -129,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Container(
               padding: const EdgeInsets.all(16),
               child: const Text(
-                '隐启设置',
+                'App Title',
                 style: TextStyle(
                   fontSize: 34,
                   fontWeight: FontWeight.bold,
