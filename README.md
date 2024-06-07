@@ -74,7 +74,9 @@ Clicking the Star and helping to improve this project is the best donation to us
 
 开发/设计：Haoyang
 
+## 介绍
 
+SettingPro 可以用来启动某个已经开发好但被开发者隐藏的页面/功能，也可以用来快速启动一些非常隐蔽的页面（比如很难发现的功能）。SettingPro 依赖网络，需要自行配置后端服务器，可以随时修改配置进行更新，而不用发布新版本，有利于用户体验。
 
 ## 立即使用
 
@@ -82,10 +84,6 @@ Clicking the Star and helping to improve this project is the best donation to us
 
 请在您的服务器上创建一个 txt 文件，并使用以下格式创建配置：
 
-
-## 介绍
-
-SettingPro可以用来启动某个已经开发好但被开发者隐藏的页面/功能，也可以用来快速启动一些非常隐蔽的页面（比如很难发现的功能）。SettingPro依赖网络，需要自行配置后端服务器，可以随时修改配置进行更新，而不用发布新版本，有利于用户体验。
 
 ```sh
 <settingpro>
