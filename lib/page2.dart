@@ -1,3 +1,4 @@
+// About Page
 
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -19,7 +20,7 @@ class _NewPageState extends State<pagetwo> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: '隐启设置',
+      title: 'AppTitle',
       theme: ThemeData(
         useMaterial3: true, // 启用Material 3
         colorScheme: ColorScheme.fromSeed(
@@ -29,7 +30,7 @@ class _NewPageState extends State<pagetwo> {
       home: Scaffold(
         appBar: AppBar(
           title: Text(
-            '关于',
+            'About',
             style: TextStyle(
               color: Colors.black, // 设置文本颜色
             ),
@@ -52,24 +53,24 @@ class _NewPageState extends State<pagetwo> {
               // Text 和 ElevatedButton 使用了MD3风格
               // ...其它组件
               Text(
-              '隐启设置',
+              'AppName',
               style: Theme.of(context).textTheme.displayMedium?.copyWith(
                     fontWeight: FontWeight.bold,
                   ),
             ),
             SizedBox(height: 16),
             Text(
-              '通过应用活动包名打开被隐藏的页面/功能',
+              'Introduce',
               style: Theme.of(context).textTheme.titleMedium,
             ),
             SizedBox(height: 24),
             Text(
-              '开发者: 酷安@皓洋',
+              'Developed By: Dropwave Studio',
               style: Theme.of(context).textTheme.titleMedium,
             ),
             SizedBox(height: 8),
             Text(
-              '版本: 9.0.1 Preview',
+              'Version: 9.0.1 Preview',
               style: Theme.of(context).textTheme.titleMedium,
             ),
             SizedBox(height: 40),
@@ -79,39 +80,17 @@ class _NewPageState extends State<pagetwo> {
             ),
             SizedBox(height: 40),
             Text(
-              '备案号',
+              'Copyright © 2020-2024 Gnayoah',
               style: Theme.of(context).textTheme.titleMedium,
             ),
             SizedBox(height: 24),
-          //  ElevatedButton(
-          //    onPressed: () {
-                // 这里添加检查更新的逻辑
-           //     print('检查更新');
-          //    },
-          //    child: Text('检测更新'),
-          //  ),
-            ElevatedButton(
+           ElevatedButton(
               onPressed: () {
-                launch('example.com');
-                print('进入官网');
+               launch('https://github.com/DropWave/SettingPro');
+               print('Github');
               },
-              child: Text('进入官网'),
+              child: Text('Github'),
             ),
-            ElevatedButton(
-              onPressed: () {
-                launch('example.com');
-                print('加入官方频道');
-              },
-              child: Text('加入官方频道(QQ)'),
-            ),
-         //   ElevatedButton(
-          //    onPressed: () {
-               
-           //     print('Github');
-          //    },
-          //    child: Text('Github'),
-           // ),
-              
             ],
           ),
         ),
