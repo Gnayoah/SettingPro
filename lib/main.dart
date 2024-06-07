@@ -48,67 +48,12 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    _checkForUpdate();
+    
     
   }
 
-  Future<void> _checkForUpdate() async {
-    try {
-      final response = await http.get(
-          Uri.parse('https://example.com/update/版本号.txt'));
-      print(response.body);
-      if(int.parse(response.body) > 20240315){
-        print('have a new version');
-        _showNativeDialog(context);
-      }else{
-        print('no update');
-      }
-      if (response.statusCode == 200) {
-        setState(() {
-          _remoteVersion = response.body;
-        });
-      } else {
-        print('Failed to fetch remote version');
-      }
-    } catch (e) {
-      print('Error fetching remote version: $e');
-    }
-  }
+  
 
-// 显示原生弹窗
-  Future<void> _showNativeDialog(BuildContext context) async {
-    return showDialog<void>(
-      context: context,
-      barrierDismissible: false, // 禁止点击外部区域关闭弹窗
-      builder: (BuildContext context) {
-        return WillPopScope(
-          // 截取返回键操作，防止弹窗被关闭
-          onWillPop: () async => false,
-          child: AlertDialog(
-            title: Text('检测到版本更新'),
-            content: SingleChildScrollView(
-              child: ListBody(
-                children: <Widget>[
-                Text('最新版本：$_remoteVersion\n'),
-                Text('update details'),
-
-                ],
-              ),
-            ),
-            actions: <Widget>[
-              TextButton(
-                onPressed: () {
-                  launch('https://example.com');
-
-                },
-                child: Text('确定'),
-              ),
-            ],
-          ),
-        );
-      },
-    );
-  }
   void openAppWithClassName(String packageName, String className) {
     AndroidIntent intent = AndroidIntent(
       action: 'android.intent.action.MAIN',
@@ -149,8 +94,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: ElevatedButton(
                   onPressed: () {
                       
-                    Global.textContent = 'http://example.com/数据设置.txt';
-                    Global.texttitle = '数据设置'; 
+                    Global.textContent = 'http://example.com/xxx.txt';
+                    Global.texttitle = 'New page name'; 
                     // 点击按钮后导航到新页面
                     Navigator.push(
                       context,
@@ -186,7 +131,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            '数据',
+                            'Title',
                             style: TextStyle(
                               fontSize: 16,
                               color: Color(0xFF727272), // 设置文本颜色为#FF727272
@@ -194,7 +139,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                           SizedBox(height: 2),
                           Text(
-                            '5G/4G',
+                            'Description',
                             style: TextStyle(
                               fontSize: 12,
                               color: Color(0xFFE0E0E0), // 设置文本颜色
