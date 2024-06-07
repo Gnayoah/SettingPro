@@ -104,7 +104,7 @@ void openAppWithClassName(String packageName, String className) {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: '隐启设置',
+      title: 'AppName',
       home: Scaffold(
         appBar: AppBar(
           title: Text(
