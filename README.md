@@ -3,7 +3,6 @@
 ![created](https://img.shields.io/github/created-at/DropWave/SettingPro) 
 ![version](https://img.shields.io/github/v/release/Dropwave/Settingpro)
 ![download](https://img.shields.io/github/downloads/DropWave/SettingPro/total)
-![download](https://img.shields.io/github/languages/top/dropwave/settingpro)
 
 Quickly launch some pages and create shortcuts by applying the activity package name.
 
@@ -69,7 +68,6 @@ Clicking the Star and helping to improve this project is the best donation to us
 ![created](https://img.shields.io/github/created-at/DropWave/SettingPro) 
 ![version](https://img.shields.io/github/v/release/Dropwave/Settingpro)
 ![download](https://img.shields.io/github/downloads/DropWave/SettingPro/total)
-![download](https://img.shields.io/github/languages/top/dropwave/settingpro)
 
 通过应用活动包名，快速启动一些页面并创建快捷方式，隐启设置和高级设置Plus是依赖于此 SettingPro Project 的官方发行示例。
 
