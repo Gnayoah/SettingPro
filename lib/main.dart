@@ -859,14 +859,7 @@ class _MyHomePageState extends State<MyHomePage> {
           
                         ],
                       ),
-                      // 其他按钮行...
-            //          Text(
-          //    '远程版本号: $_remoteVersion',
-          //    style: TextStyle(
-          //      fontSize: 18,
-         //       color: Colors.black,
-         //     ),
-          //  ),
+                      
 
                     ],
                   ),
