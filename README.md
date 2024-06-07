@@ -54,6 +54,7 @@ We recommend that you use UTF-8 encoding when creating a txt file to ensure that
 ## Demo
 
 In fact, everyone has different needs for SettingPro, and we cannot ensure its availability on every device. In principle, we do not provide Demo, but to let you better understand the function of the program, we provide a sample program of SettingPro based on Android settings (based on MIUI/HyperOS). You can use this sample program to open a page in some Android settings. You can download this sample on [Releases](https://github.com/DropWave/SettingPro/releases).
+> Note that this example only supports Simplified Chinese.
 
 ## Licence
 
