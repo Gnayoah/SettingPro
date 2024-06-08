@@ -56,3 +56,8 @@ SettingPro 可以用来启动某个已经开发好但被开发者隐藏的页面
 本项目 **基本上** 在 AGPL-3.0 许可证下开源，**但有额外的条款** ，详情参阅 [LICENSE 文件](https://github.com/DropWave/SettingPro/blob/main/LICENSE)。
 
 点上 Star 和帮助完善这个项目是对我们最好的捐赠
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Gnayoah/SettingPro&type=Timeline)](https://star-history.com/#Gnayoah/SettingPro&Timeline)
