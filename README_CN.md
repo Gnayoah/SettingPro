@@ -53,7 +53,7 @@ SettingPro 可以用来启动某个已经开发好但被开发者隐藏的页面
 ```
 flutter build apk --release
 ```
-这行代码用于打包 Flutter 程序，请确保你已经配置好你的应用签名，并修改了应用包名。如有疑问，请访问 https://docs.flutter.cn/。
+这行代码用于打包 Flutter 程序，请确保你已经配置好你的应用签名，并修改了应用包名。如有疑问，请访问 [Flutter中文文档](https://docs.flutter.cn/)。
 
 ## Demo
 
