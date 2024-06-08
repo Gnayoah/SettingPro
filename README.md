@@ -45,14 +45,25 @@ The `PACKAGE NAME` is the Android application package name, for example: `com.an
 
 And the `ACTIVITY PACKAGE NAME` is based on `PACKAGE NAME`, for example: `com.android.settings.wifi.WifiConfigInfo`.
 
-**2. Configure to program**
 
-We recommend that you use UTF-8 encoding when creating a txt file to ensure that your txt file can be read, then replace the default example.com/xxx.txt in the ```main.dart``` with your domain name and file name.
+**2. Clone this repository to your local machine:**
+```
+git clone https://github.com/Gnayoah/SettingPro.git
+```
+
+**3. Navigate to the project directory:**
+```
+cd settingpro
+```
+
+**4. Configure to program**
+
+Replace the default example.com/xxx.txt in the ```main.dart``` with your domain name and file name.
 ``` 
 Global.textContent = 'http://example.com/xxx.txt';
 ```
 
-**3. Packaging Program**
+**5. Packaging Program**
 
 Make sure you have configured Dart and Flutter environment. If not, please go to [Flutter.dev](https://docs.flutter.dev/get-started/install).
 ```
