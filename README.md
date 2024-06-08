@@ -1,6 +1,6 @@
 [简体中文](https://github.com/Gnayoah/SettingPro/blob/main/README_CN.md)
 
-## SettingPro
+# SettingPro
 ![GitHub Repo stars](https://img.shields.io/github/stars/dropwave/settingpro?style=flat)
 ![created](https://img.shields.io/github/created-at/DropWave/SettingPro) 
 ![version](https://img.shields.io/github/v/release/Dropwave/Settingpro)
