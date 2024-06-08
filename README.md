@@ -58,7 +58,7 @@ cd settingpro
 
 **4. Configure to program**
 
-Replace the default example.com/xxx.txt in the ```main.dart``` with your domain name and file name.
+Replace the default ```http://example.com/xxx.txt``` in the ```main.dart``` with your domain name and file name.
 ``` 
 Global.textContent = 'http://example.com/xxx.txt';
 ```
