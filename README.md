@@ -1,6 +1,6 @@
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Gnayoah/SettingPro&type=Date)](https://star-history.com/#Gnayoah/SettingPro&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Gnayoah/SettingPro&type=Timeline)](https://star-history.com/#Gnayoah/SettingPro&Timeline)
 
 ## SettingPro
 ![GitHub Repo stars](https://img.shields.io/github/stars/dropwave/settingpro?style=flat)
