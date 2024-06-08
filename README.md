@@ -1,7 +1,3 @@
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=Gnayoah/SettingPro&type=Timeline)](https://star-history.com/#Gnayoah/SettingPro&Timeline)
-
 ## SettingPro
 ![GitHub Repo stars](https://img.shields.io/github/stars/dropwave/settingpro?style=flat)
 ![created](https://img.shields.io/github/created-at/DropWave/SettingPro) 
@@ -64,6 +60,10 @@ In fact, everyone has different needs for SettingPro, and we cannot ensure its a
 This project is **basically** open source under the AGPL-3.0 license, **but there are additional terms**, please refer to the [LICENSE](https://github.com/DropWave/SettingPro/blob/main/LICENSE) for details.
 
 Clicking the Star and helping to improve this project is the best donation to us
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Gnayoah/SettingPro&type=Timeline)](https://star-history.com/#Gnayoah/SettingPro&Timeline)
 
 <br><br>
 
