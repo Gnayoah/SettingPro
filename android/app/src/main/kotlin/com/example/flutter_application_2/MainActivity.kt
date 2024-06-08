@@ -1,4 +1,4 @@
-package com.settingpro.gnayoah
+package com.settingpro.example
 
 import io.flutter.embedding.android.FlutterActivity
 
