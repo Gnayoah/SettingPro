@@ -50,7 +50,15 @@ And the `ACTIVITY PACKAGE NAME` is based on `PACKAGE NAME`, for example: `com.an
 **2. Configure to program**
 
 We recommend that you use UTF-8 encoding when creating a txt file to ensure that your txt file can be read, then replace the default example.com/xxx.txt in the code with your domain name and file name.
-> Make sure you have configured Dart and Flutter environment. If not, please go to [Flutter.dev](https://docs.flutter.dev/get-started/install).
+
+
+**3. Packaging Program**
+
+Make sure you have configured Dart and Flutter environment. If not, please go to [Flutter.dev](https://docs.flutter.dev/get-started/install).
+```
+flutter build apk --release
+```
+This line of code is used to package the Flutter program. Please make sure you have configured your app signature and changed the app package name. If you have any confusion, visit https://docs.flutter.dev/.
 
 ## Demo
 
