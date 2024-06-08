@@ -46,7 +46,14 @@ SettingPro 可以用来启动某个已经开发好但被开发者隐藏的页面
 **2. 配置到程序**
 
 我们建议您在创建txt文件时使用UTF-8编码，以确保您的txt文件可以被读取，然后将代码中默认的example.com/xxx.txt替换为您的域名和文件名。
-> 确保你已经配置了 Dart 和 Flutter 环境。如果没有，请前往 [Flutter.cn](https://docs.flutter.cn/get-started/install/)。
+
+**3. 打包程序**
+
+确保你已经配置了 Dart 和 Flutter 环境。如果没有，请前往 [Flutter.cn](https://docs.flutter.cn/get-started/install/)。
+```
+flutter build apk --release
+```
+这行代码用于打包 Flutter 程序，请确保你已经配置好你的应用签名，并修改了应用包名。如有疑问，请访问 https://docs.flutter.cn/。
 
 ## Demo
 
