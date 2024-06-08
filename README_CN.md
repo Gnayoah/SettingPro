@@ -62,7 +62,7 @@ Global.textContent = 'http://example.com/xxx.txt';
 
 **5. 配置到程序**
 
-我们建议您在创建txt文件时使用UTF-8编码，以确保您的txt文件可以被读取，然后将```main.dart```中默认的example.com/xxx.txt替换为您的域名和文件名。
+将```main.dart```中默认的example.com/xxx.txt替换为您的域名和文件名。
 ``` 
 Global.textContent = 'http://example.com/xxx.txt';
 ```
