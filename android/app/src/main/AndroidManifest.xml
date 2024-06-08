@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="隐启设置Preview"
+        android:label="SettingPro Sample"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
