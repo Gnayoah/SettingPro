@@ -75,7 +75,7 @@ flutter build apk --release
 ```
 这行代码用于打包 Flutter 程序，请确保你已经配置好你的应用签名，并修改了应用包名。如有疑问，请访问 [docs.flutter.cn](https://docs.flutter.cn/)。
 
-## Demo
+## 示例
 
 其实每个人对 SettingPro 的需求都不一样，我们无法保证它在每台设备上都可用。原则上我们不提供 Demo，但为了让你更好地了解程序的功能，我们提供了基于 Android 设置（基于 MIUI/HyperOS）的 SettingPro 示例程序。你可以使用此示例程序在某些 Android 设置中打开页面。你可以在 [Releases](https://github.com/DropWave/SettingPro/releases) 或 [应用官网](https://www.coolapk.com/apk/278849) 或 [酷安](https://www.coolapk.com/apk/278849)下载此示例。
 
