@@ -1,4 +1,4 @@
-[简体中文](https://github.com/Gnayoah/SettingPro/blob/main/README_CN.md)
+Readme Languages: [简体中文](https://github.com/Gnayoah/SettingPro/blob/main/README_CN.md)
 
 ## SettingPro
 ![GitHub Repo stars](https://img.shields.io/github/stars/dropwave/settingpro?style=flat)
