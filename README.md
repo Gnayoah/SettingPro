@@ -39,7 +39,7 @@ Please create a txt file on your server and create a configuration using the fol
 
 ...
 ```
- **Please edit only uppercase text!**
+> Please edit only uppercase text!
 
 The `PACKAGE NAME` is the Android application package name, for example: `com.android.settings`, 
 
