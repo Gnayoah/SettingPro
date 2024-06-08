@@ -86,6 +86,6 @@ flutter build apk --release
 点上 Star 和帮助完善这个项目是对我们最好的捐赠
 
 
-## Star History
+## Star 历史
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Gnayoah/SettingPro&type=Timeline)](https://star-history.com/#Gnayoah/SettingPro&Timeline)
