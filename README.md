@@ -45,8 +45,6 @@ The `PACKAGE NAME` is the Android application package name, for example: `com.an
 
 And the `ACTIVITY PACKAGE NAME` is based on `PACKAGE NAME`, for example: `com.android.settings.wifi.WifiConfigInfo`.
 
-<br>
-
 **2. Configure to program**
 
 We recommend that you use UTF-8 encoding when creating a txt file to ensure that your txt file can be read, then replace the default example.com/xxx.txt in the code with your domain name and file name.
