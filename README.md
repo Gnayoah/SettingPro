@@ -106,7 +106,7 @@ SettingPro 可以用来启动某个已经开发好但被开发者隐藏的页面
 
 `包名` 是 Android 应用包名，例如：`com.android.settings`，
 
-而 `活动包名` 则基于 `PACKAGE NAME`，例如：`com.android.settings.wifi.WifiConfigInfo`。
+而 `活动包名` 则基于 `包名`，例如：`com.android.settings.wifi.WifiConfigInfo`。
 
 **2. 配置到程序**
 
