@@ -58,7 +58,7 @@ Make sure you have configured Dart and Flutter environment. If not, please go to
 ```
 flutter build apk --release
 ```
-This line of code is used to package the Flutter program. Please make sure you have configured your app signature and changed the app package name. If you have any confusion, visit https://docs.flutter.dev/.
+This line of code is used to package the Flutter program. Please make sure you have configured your app signature and changed the app package name. If you have any confusion, visit [docs.flutter.dev](https://docs.flutter.dev/).
 
 ## Demo
 
