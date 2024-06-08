@@ -18,7 +18,7 @@ SettingPro can be used to enable a page/function that has been developed but hid
 
 ## Use it
 
-**1. Create a cloud configuration**
+**1. Create a configuration**
 
 Please create a txt file on your server and create a configuration using the following format:
 
