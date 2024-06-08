@@ -55,7 +55,7 @@ cd settingpro
 
 **4. 配置编程**
 
-将 ```main.dart``` 中的默认 example.com/xxx.txt 替换为您的域名和文件名。
+将 ```main.dart``` 中的默认 ```http://example.com/xxx.txt``` 替换为您的域名和文件名。
 ```
 Global.textContent = 'http://example.com/xxx.txt';
 ```
