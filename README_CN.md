@@ -62,7 +62,7 @@ flutter build apk --release
 
 其实每个人对 SettingPro 的需求都不一样，我们无法保证它在每台设备上都可用。原则上我们不提供 Demo，但为了让你更好地了解程序的功能，我们提供了基于 Android 设置（基于 MIUI/HyperOS）的 SettingPro 示例程序。你可以使用此示例程序在某些 Android 设置中打开页面。你可以在 [Releases](https://github.com/DropWave/SettingPro/releases) 或 [应用官网](https://www.coolapk.com/apk/278849) 或 [酷安](https://www.coolapk.com/apk/278849)下载此示例。
 
-## Licence
+## 许可证
 
 本项目 **基本上** 在 AGPL-3.0 许可证下开源，**但有额外的条款** ，详情参阅 [LICENSE 文件](https://github.com/DropWave/SettingPro/blob/main/LICENSE)。
 
