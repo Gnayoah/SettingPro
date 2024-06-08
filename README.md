@@ -8,7 +8,7 @@
 
 Quickly launch some pages and create shortcuts by applying the activity package name.
 
-Developmen & Design: Haoyang
+Developmen & Design: Gnayoah
 
 
 ## Introduce
