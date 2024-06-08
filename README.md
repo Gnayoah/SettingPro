@@ -112,7 +112,7 @@ SettingPro 可以用来启动某个已经开发好但被开发者隐藏的页面
 
 我们建议您在创建txt文件时使用UTF-8编码，以确保您的txt文件可以被读取，然后将代码中默认的example.com/xxx.txt替换为您的域名和文件名。
 
-## DEMO
+## Demo
 
 其实每个人对 SettingPro 的需求都不一样，我们无法保证它在每台设备上都可用。原则上我们不提供 Demo，但为了让你更好地了解程序的功能，我们提供了基于 Android 设置（基于 MIUI/HyperOS）的 SettingPro 示例程序。你可以使用此示例程序在某些 Android 设置中打开页面。你可以在 [Releases](https://github.com/DropWave/SettingPro/releases) 或 [应用官网](https://www.coolapk.com/apk/278849) 或 [酷安](https://www.coolapk.com/apk/278849)下载此示例。
 
