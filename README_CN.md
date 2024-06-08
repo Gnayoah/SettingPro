@@ -6,7 +6,7 @@
 
 通过应用活动包名，快速启动一些页面并创建快捷方式，隐启设置和高级设置Plus是依赖于此 SettingPro Project 的官方发行示例。
 
-开发/设计：Haoyang
+开发 & 设计：Haoyang
 
 ## 介绍
 
