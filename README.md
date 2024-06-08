@@ -47,8 +47,10 @@ And the `ACTIVITY PACKAGE NAME` is based on `PACKAGE NAME`, for example: `com.an
 
 **2. Configure to program**
 
-We recommend that you use UTF-8 encoding when creating a txt file to ensure that your txt file can be read, then replace the default example.com/xxx.txt in the code with your domain name and file name.
-
+We recommend that you use UTF-8 encoding when creating a txt file to ensure that your txt file can be read, then replace the default example.com/xxx.txt in the ```main.dart``` with your domain name and file name.
+``` 
+Global.textContent = 'http://example.com/xxx.txt';
+```
 
 **3. Packaging Program**
 
