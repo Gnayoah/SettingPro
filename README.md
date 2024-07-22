@@ -20,7 +20,7 @@ SettingPro can be used to enable a page/function that has been developed but hid
 
 **1. Create a configuration**
 
-Please create a txt file on your server and create a configuration using the following format:
+Create a txt file create a configuration using the following format:
 
 ```sh
 <settingpro>
@@ -73,7 +73,7 @@ This line of code is used to package the Flutter program. Please make sure you h
 
 ## Demo
 
-In fact, everyone has different needs for SettingPro, and we cannot ensure its availability on every device. In principle, we do not provide Demo, but to let you better understand the function of the program, we provide a sample program of SettingPro based on Android settings (based on MIUI/HyperOS). You can use this sample program to open a page in some Android settings. You can download this sample on [Releases](https://github.com/DropWave/SettingPro/releases).
+In principle, we do not provide Demo, but to let you better understand the function of the program, we provide a sample program of SettingPro based on Android settings (based on MIUI/HyperOS). You can use this sample program to open a page in some Android settings. You can download this sample on [Releases](https://github.com/DropWave/SettingPro/releases).
 > Note that this example only supports Simplified Chinese.
 
 ## Licence
