@@ -13,7 +13,7 @@ Developmen & Design: Gnayoah
 
 ## Introduce
 
-SettingPro can be used to enable a page/function that has been developed but hidden by the developer. It can also be used to quickly start some pages that are very hidden (such as very difficult to find functions). SettingPro relies on the network, and you need to configure the backend server yourself. You can modify the configuration at any time to update, instead of releasing a new version, which is beneficial to the user experience.
+SettingPro can be used to enable a page/function that has been developed but hidden by the developer. It can also be used to quickly start some pages that are very hidden (such as very difficult to find functions).
 
 ## Licence
 
