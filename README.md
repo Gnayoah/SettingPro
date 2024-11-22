@@ -17,7 +17,7 @@ SettingPro can be used to enable a page/function that has been developed but hid
 
 ## Licence
 
-This project is **basically** open source under the AGPL-3.0 license, **but there are additional terms**, please refer to the [LICENSE](https://github.com/DropWave/SettingPro/blob/main/LICENSE) for details.
+This project is open source under the AGPL-3.0 license, please refer to the [LICENSE](https://github.com/DropWave/SettingPro/blob/main/LICENSE) for details.
 
 Clicking the Star and helping to improve this project is the best donation to us
 
